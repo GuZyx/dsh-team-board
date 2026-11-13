@@ -68,14 +68,20 @@ git rev-parse HEAD
 
 ## 第 3 步：写索引文件
 
-把 [market-index.example.json](market-index.example.json) 改好（名字、版本、时间戳、来源、engines），放到一个 https 能访问的地方：GitHub raw、Gist、你自己的静态站点、对象存储都行。**不能靠重定向**，必须配最终地址。
+索引文件就是仓库根目录的 [market-index.json](market-index.json)，**不需要另找托管**——直接用它的 raw 地址：
+
+```
+https://raw.githubusercontent.com/GuZyx/dsh-team-board/main/market-index.json
+```
+
+`icon.svg` 相对索引 URL 解析，正好指向同目录的图标。注意 raw 必须配**最终地址**，`pluginMarket` 拒绝重定向。
 
 格式已用官方校验器 `@deepseek-ai/dsh-plugin-market-index` 验证过；改完再跑一次：
 
 ```sh
 node -e '
 const { parseMarketIndex } = require("<harness>/node_modules/@deepseek-ai/dsh-plugin-market-index");
-const doc = JSON.parse(require("fs").readFileSync("market-index.example.json","utf8"));
+const doc = JSON.parse(require("fs").readFileSync("market-index.json","utf8"));
 parseMarketIndex(doc, "https://example.com/index.json");
 console.log("index ok");
 '

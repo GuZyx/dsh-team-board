@@ -20,7 +20,13 @@ Harness 自带的任务板在会话头部弹出层里，只读、只显示任务
 
 ### 从插件市场
 
-在 Harness 的 **Plugins → Discover** 里添加本插件的索引 URL，然后安装。索引是一个 JSON 文件，格式见 [market-index.example.json](market-index.example.json)。
+在 Harness 的 **Plugins → Discover** 里添加本插件的索引 URL，然后安装：
+
+```
+https://raw.githubusercontent.com/GuZyx/dsh-team-board/main/market-index.json
+```
+
+索引格式见 [market-index.json](market-index.json)。
 
 ### 从本地目录
 
