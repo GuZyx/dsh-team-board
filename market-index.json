@@ -39,7 +39,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/GuZyx/dsh-team-board.git",
-            "commit": "dc1cd45220187a557e38031f67a592e86aab5414"
+            "commit": "6938c0bf361819bd7a4372b3749d7e8b3ab15bea"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.2 <0.3.0"
