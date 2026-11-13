@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/dsh-team-kanban',
+  id: 'dsh-team-board',
   factory(require) {
     const React = require('react');
     const { useState, useEffect, useMemo, useRef, useCallback } = React;

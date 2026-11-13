@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "@local/dsh-team-kanban",
+      "name": "dsh-team-board",
       "title": {
         "zh": "协作任务板",
         "en": "Team task board"

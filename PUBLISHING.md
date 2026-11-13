@@ -12,14 +12,11 @@
 
 **官方离线目录不是自助的**：`listBundles` 把随安装包提供的条目标记为 `official`，第三方无法通过配置文件塞进去。想让插件出现在官方目录里，只能走官方收录渠道（提交给 DeepSeek）。
 
-## 第 0 步：改名字
+## 第 0 步：包名
 
-`@local/dsh-team-kanban` 是本地占位名：
+当前包名 **`dsh-team-board`** —— Git 渠道可以直接装，也不会与别人 profile 里的 `@local/*` 撞名。npm 上同名若已被占用，再改成 `@your-scope/dsh-team-board`。
 
-- **npm 渠道必做**：npm 上发不出去，必须改成你的作用域或一个不冲突的裸名，例如 `@your-scope/dsh-team-kanban`。
-- **Git 渠道可选**：`@local/` 能装，但别人 profile 里若已有其它 `@local/*` 包会撞名，建议一并改掉。
-
-**必须同步改三个地方**，否则客户端模块 id 与加载器入口对不上，插件不激活：
+**改包名时三个地方必须同步**，否则客户端模块 id 与加载器入口对不上，插件不激活：
 
 1. `package.json` → `name`
 2. `client.js` 第 3 行附近 → `window.__ModuleLoader__.load({ id: '<包名>', ... })`
