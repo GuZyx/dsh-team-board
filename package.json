@@ -5,13 +5,13 @@
   "type": "module",
   "license": "MIT",
   "author": "zhouyunxiang",
-  "homepage": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban#readme",
+  "homepage": "https://github.com/GuZyx/dsh-team-board#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git"
+    "url": "git+https://github.com/GuZyx/dsh-team-board.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban/issues"
+    "url": "https://github.com/GuZyx/dsh-team-board/issues"
   },
   "keywords": [
     "dsh-plugin",

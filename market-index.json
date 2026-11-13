@@ -21,9 +21,9 @@
       },
       "icon": "icon.svg",
       "author": "GuZyx",
-      "homepage": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban",
+      "homepage": "https://github.com/GuZyx/dsh-team-board",
       "repository": {
-        "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git"
+        "url": "https://github.com/GuZyx/dsh-team-board.git"
       },
       "metadata": {
         "keywords": [
@@ -38,7 +38,7 @@
           "publishTimestamp": 1763020800,
           "source": {
             "type": "git",
-            "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git",
+            "url": "https://github.com/GuZyx/dsh-team-board.git",
             "commit": "dc1cd45220187a557e38031f67a592e86aab5414"
           },
           "engines": {
