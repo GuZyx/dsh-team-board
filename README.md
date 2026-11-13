@@ -34,14 +34,19 @@ https://raw.githubusercontent.com/GuZyx/dsh-team-board/main/market-index.json
 
 ### 从 npm / Git
 
-```sh
-# npm
-dsh plugin install <package-name>@<version>
-# Git（固定 commit）
-dsh plugin install "git+https://github.com/<you>/<repo>.git#<commit>&path:/"
+最稳的是 UI：**Plugins → Add plugin**，填入包的安装串。安装串就是下面这一串（Market/Discover 会自动给你）：
+
+```
+git+https://github.com/GuZyx/dsh-team-board.git#6938c0bf361819bd7a4372b3749d7e8b3ab15bea
 ```
 
-安装后**重启 Harness**：客户端插件按模块代加载，刷新页面不一定换到新的一代。
+命令行只有 pnpm 转发，**不会替你勾选 bundle**，需要自己再启用一次：
+
+```sh
+dsh plugin --profile <profile> add "git+https://github.com/GuZyx/dsh-team-board.git#<commit>"
+```
+
+装完在 **Plugins** 里确认 `dsh-team-board` 这行是选中状态，然后**重启 Harness**：客户端插件按模块代加载，刷新页面不一定换到新的一代。
 
 ## 用法
 
