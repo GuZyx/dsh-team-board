@@ -26,7 +26,11 @@
         "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git"
       },
       "metadata": {
-        "keywords": ["kanban", "agent-teams", "task-board"]
+        "keywords": [
+          "kanban",
+          "agent-teams",
+          "task-board"
+        ]
       },
       "versions": [
         {
@@ -35,7 +39,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git",
-            "commit": "0000000000000000000000000000000000000000"
+            "commit": "dc1cd45220187a557e38031f67a592e86aab5414"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.2 <0.3.0"
