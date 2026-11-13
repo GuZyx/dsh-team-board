@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "协作任务板",
+    "description": "Agent Teams 共享任务的看板视图，带依赖箭头和写域冲突提示。只读；任务由 agent 修改。",
+    "detail": "docs/DETAIL.md"
+  }
+}

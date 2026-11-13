@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Team task board",
+    "description": "A kanban board for Agent Teams shared tasks, with dependency arrows and write-scope warnings. Read-only; tasks are changed by agents.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "@local/dsh-team-kanban",
+  "version": "1.1.0",
+  "description": "Kanban board for Agent Teams shared tasks, as a left-sidebar page in DeepSeek Harness.",
+  "type": "module",
+  "license": "MIT",
+  "author": "zhouyunxiang",
+  "homepage": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-teams",
+    "kanban",
+    "task-board"
+  ],
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.2 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

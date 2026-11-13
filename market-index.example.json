@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "我的 DSH 插件索引",
+    "en": "My DSH plugins"
+  },
+  "description": {
+    "zh": "个人维护的 DeepSeek Harness 插件索引。",
+    "en": "A personally maintained DeepSeek Harness plugin index."
+  },
+  "plugins": [
+    {
+      "name": "@local/dsh-team-kanban",
+      "title": {
+        "zh": "协作任务板",
+        "en": "Team task board"
+      },
+      "description": {
+        "zh": "Agent Teams 共享任务的看板页面：三列看板、依赖箭头、写域冲突、子智能体耗时与 token、搜索过滤、多会话总览。",
+        "en": "A kanban page for Agent Teams shared tasks: dependency arrows, write-scope warnings, subagent token and duration, search, and a cross-session overview."
+      },
+      "icon": "icon.svg",
+      "author": "GuZyx",
+      "homepage": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban",
+      "repository": {
+        "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git"
+      },
+      "metadata": {
+        "keywords": ["kanban", "agent-teams", "task-board"]
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1763020800,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/YOUR_ACCOUNT/dsh-team-kanban.git",
+            "commit": "0000000000000000000000000000000000000000"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
